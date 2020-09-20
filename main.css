@@ -1,0 +1,21 @@
+body{}
+#main{
+
+padding-top: 20%;
+text-align: center;
+    height: 300px;
+    width: 500px;
+
+}
+#aceptar{
+
+        
+}
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
