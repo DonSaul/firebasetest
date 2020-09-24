@@ -5,6 +5,12 @@
 	text-align: center;	
 
 }
+#ResC{
+
+	color: green;
+
+}
+
 #activar{
 
 	background-color:blueviolet;
@@ -48,4 +54,10 @@ background-color: chartreuse;
 #menos{
 	background-color: red;
 	width: 24;
+}
+
+#preguntased{
+
+
+	text-align: center;
 }
