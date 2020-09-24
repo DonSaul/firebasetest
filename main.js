@@ -18,11 +18,13 @@ enviar.addEventListener("submit", async(e) =>{
     const response =  await db.collection("examenes").doc().set({
       pregunta,recurso,respc,resin1,resin2,resin3
     })
-
+    await getexam();
 
     console.log(response)
     console.log(pregunta,recurso,respc,resin1,resin2,resin3)
+    enviar.reset();
     alert("Pregunta Enviada")
+ 
 })
 
 
