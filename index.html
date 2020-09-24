@@ -8,7 +8,7 @@
     <meta name="author" content="Saúl Olguin">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="main.js"></script>
+
     <link rel="stylesheet" href="main.css">
           <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -16,7 +16,13 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <!-- Latest compiled JavaScript -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-     
+       <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
 
 
 </head>
@@ -24,13 +30,9 @@
 
 
 <body>
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+  
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-analytics.js"></script>
+
 
 
 
@@ -39,7 +41,7 @@
 <script>
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
+  var config = {
     apiKey: "AIzaSyB3rxVzicY3gAoG99tz6WkB4lsMiia29YE",
     authDomain: "test-aad01.firebaseapp.com",
     databaseURL: "https://test-aad01.firebaseio.com",
@@ -50,8 +52,8 @@
     measurementId: "G-2K9KV9DS1V"
   };
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
+  firebase.initializeApp(config);
+
 </script>
 
 
@@ -60,12 +62,12 @@
   <div class="container" id="titulo">  <h1>Demo</h1>
       <input type="text" class="form-control" id="CE" placeholder="Clave del Examen">
       <br>  
-      <button id="activar" onclick="myFunction()">Click Me</button>
+     
 
 
   </div>
 
-  <div class="container" id = "main" >
+  <form class="container" id = "main" >
 
 
   <div class="form-group" id ="p">
@@ -79,17 +81,17 @@
 
   </div>
    <div class="RespuestaI" id="RC">
-        <input type="text" class="form-control" id="ResC1" placeholder="Respuesta Incorrecta"><br>
-        <input type="text" class="form-control" id="ResC2" placeholder="Respuesta Incorrecta"><br>
-        <input type="text" class="form-control" id="ResC3" placeholder="Respuesta Incorrecta"><br>
+        <input type="text" class="form-control" id="ResINC1" placeholder="Respuesta Incorrecta"><br>
+        <input type="text" class="form-control" id="ResINC2" placeholder="Respuesta Incorrecta"><br>
+        <input type="text" class="form-control" id="ResINC3" placeholder="Respuesta Incorrecta"><br>
   </div>
   <div id = "botonera">
     <button type="submit" class="btn btn-primary" id = "enviar">Enviar</button><br><br>
     <button type="submit" class="btn btn-primary" id="mas">+</button>
     <button type="submit" class="btn btn-primary" id="menos">--</button>
   </div>
- 
+  <script src="main.js"></script>
     
-</div>
+  </form>
    
 </body>
