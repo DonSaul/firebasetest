@@ -1,21 +1,51 @@
-body{}
-#main{
 
-padding-top: 20%;
+#titulo{
+
+
+	text-align: center;	
+
+}
+#activar{
+
+	background-color:blueviolet;
+	font-size: medium;
+	border-radius: 10%;
+	color: white;
+}
+#CE{
+
+text-align: center;
+width: 50%;
+
+
+
+}
+#main{
+display: none;
+padding-top: 10%;
 text-align: center;
     height: 300px;
-    width: 500px;
+	width: 500px;
+}
+
+#RC{
+	padding-left: 10%;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+#botonera{
+	font-size: 20px;
+
 
 }
-#aceptar{
+#mas{
 
-        
+background-color: chartreuse;
+
 }
-.inputfile {
-	width: 0.1px;
-	height: 0.1px;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute;
-	z-index: -1;
+#menos{
+	background-color: red;
+	width: 24;
 }
